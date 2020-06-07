@@ -1,0 +1,27 @@
+spring:
+  datasource:
+    platform: postgres
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/dummy
+    username: postgres
+    password: admin
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
+  jackson:
+    serialization:
+      fail-on-empty-beans: false
+
+okta:
+  oauth2:
+    client-id: 0oae3nc0oh1ff3LW94x6
+    client-secret: Z9xgUkq_cEbcxqIAy7twalI2CJw3C3lREccJrnd2
+    issuer: https://dev-633589.okta.com/oauth2/default
+    redirect-uri: /authorization-code/callback
+
+  client:
+    org-url: https://dev-633589.okta.com
+    token: 00oLhyIHl490JVU5nQ75xy7QcJnsZnf-V2ARXj7vgu
